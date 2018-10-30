@@ -1,0 +1,9 @@
+apply plugin: "java"
+apply plugin: "application"
+mainClassName = "com.example.hello"
+task wrapper(type:Wrapper) {
+	gradleVersion = "1.4"
+}
+run {
+ standardInput = System.in
+}
